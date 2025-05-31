@@ -15,7 +15,10 @@
 
 3.  **Build & Run:**
     *   Select a target iOS Simulator or a connected iOS device in Xcode.
-    *   Press the "Run" button 
+    *   Press the "Run" button
+  
+4. **Testing**
+   *    To set dark mode in simulator: Setting -> Developer -> Dark Appearance
 
 ## Architecture
 
@@ -48,6 +51,7 @@ CineList is built using **SwiftUI** and **Combine** and follows the **Model-View
 * The favorite icon is implemented in both MovieFeedView and MovieDetailScreen to ensure accessibility, since the image can determine how it appears on the screen. A custom back button is integrated in the details screen for the same reason.
 * Genre based filters are shown just below search bar so that it's easy for the user to notice.
 * The layout is responsive and is tested in both iphone SE and iphone 16 Pro.
+* The movie title is set to two line limit, proceeded with truncation, to make it suitable for UI scaling
 * App is designed to be consistent in both dark and light mode. (PS: I like dark mode better).
 * Favourite button is added directly in movie card, so that it makes it easier for the user to add it directly to the list
 * The user will be alerted if they are trying to remove favourite movie in favourite tab, this is to prevent accidental touches. The same is not implemented in the moviefeed view since the main usecase of that screen is searching and discovering movies.
@@ -57,11 +61,11 @@ CineList is built using **SwiftUI** and **Combine** and follows the **Model-View
 ### Light Mode (iPhone SE)
 
 <div align="center">
+   <img src="https://github.com/user-attachments/assets/a104248e-a5b3-4eab-a02a-08778ef6b537" width="150"/>
   <img src="https://github.com/user-attachments/assets/fd5e2ff9-1c96-4775-acbc-098b93c70bf8" width="150"/>
   <img src="https://github.com/user-attachments/assets/fb757715-27b3-421f-bec3-946d4c4863fd" width="150"/>
   <img src="https://github.com/user-attachments/assets/622d9210-9d5f-4032-857d-5170362bf7aa" width="150"/>
   <img src="https://github.com/user-attachments/assets/fd6678b1-2f59-48b7-9ea4-565a93919b70" width="150"/>
-  <img src="https://github.com/user-attachments/assets/a104248e-a5b3-4eab-a02a-08778ef6b537" width="150"/>
   <img src="https://github.com/user-attachments/assets/a3ad2d0c-2c15-49cd-ad68-c0cc6f1c2dfd" width="150"/>
 </div>
 
@@ -82,6 +86,7 @@ CineList is built using **SwiftUI** and **Combine** and follows the **Model-View
 ## What can be improved?
 * Offline support changes - Implement a network monitor and notify the user if the app is offline, through UI. Currently the app will work fine with cached responses and UserDefaults.
 * More info in details screen
+* Implement animations, eg: Text animation for movie title in MovieFeedView if it's truncated. So that user can see the full movie title without entering detail screen.
 * Add notes to the saved movies
 * Improved test coverage, currently the app is at 80%
 * Implement scrolling enhancements in UI
