@@ -4,7 +4,7 @@
 ## Building and Running the Project
 
 1.  **Prerequisites:**
-    *   Xcode (latest stable version recommended, developed with Xcode 15.x)
+    *   Xcode (latest stable version recommended, developed with Xcode 16.2)
     *   An active internet connection (for fetching movie data), offline states are handled in the app, and favorites will work as expected in offline mode because of UserDefaults. Rest are shown as cached.
     *   API key from [The Movie Database (TMDb)](https://www.themoviedb.org/settings/api) is already included in the project for easier execution (even though it's not a standard practice to share it through repo. This will be removed after the evaluation.)
 
