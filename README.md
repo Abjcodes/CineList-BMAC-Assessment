@@ -61,7 +61,6 @@ CineList is built using **SwiftUI** and **Combine** and follows the **Model-View
 ### Light Mode (iPhone SE)
 
 <div align="center">
-   <img src="https://github.com/user-attachments/assets/a104248e-a5b3-4eab-a02a-08778ef6b537" width="150"/>
   <img src="https://github.com/user-attachments/assets/fd5e2ff9-1c96-4775-acbc-098b93c70bf8" width="150"/>
   <img src="https://github.com/user-attachments/assets/fb757715-27b3-421f-bec3-946d4c4863fd" width="150"/>
   <img src="https://github.com/user-attachments/assets/622d9210-9d5f-4032-857d-5170362bf7aa" width="150"/>
